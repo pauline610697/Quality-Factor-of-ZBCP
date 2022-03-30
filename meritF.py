@@ -37,22 +37,20 @@ GN_max = np.maximum(G_N[sign_change_index[0]],G_N[sign_change_index[-1]])
 
 F = GN_max/GN_min;
 
-# In[1]:
 # ======== G as a function of Tunneling Barrier (Linecuts together)==============      
-#plt.figure(dpi = 600)
-#plt.plot(TG_Range, G_z, label = "$V_{bias}=$"+str(V0))
-#plt.plot(TG_Range, G_N1, label = "$V_{bias}=$"+str(V1))
-#plt.plot(TG_Range, G_N2, label = "$V_{bias}=$"+str(V2))
-#plt.legend()
-#plt.ylim(0,1.1)
-#plt.xlim(200,0)
-#plt.xlabel('$E_{barrier}(meV)$')
-#plt.ylabel('$G(2e^2/h)$')
-#plt.title('$V_z=$'+str(Vz)+' meV, $T=0$.')
-#plt.savefig('/Users/laiyihua/Google Drive/UMD/Research/Majorana/merit of Quantization/TG_good_2_Vz='+str(Vz)+'_linecuts.png')
-#plt.show()
+plt.figure(dpi = 600)
+plt.plot(TG_Range, G_z, label = "$V_{bias}=$"+str(V0))
+plt.plot(TG_Range, G_N1, label = "$V_{bias}=$"+str(V1))
+plt.plot(TG_Range, G_N2, label = "$V_{bias}=$"+str(V2))
+plt.legend()
+plt.ylim(0,1.1)
+plt.xlim(200,0)
+plt.xlabel('$E_{barrier}(meV)$')
+plt.ylabel('$G(2e^2/h)$')
+plt.title('$V_z=$'+str(Vz)+' meV, $T=0$.')
+plt.savefig('/Users/laiyihua/Google Drive/UMD/Research/Majorana/merit of Quantization/TG_good_2_Vz='+str(Vz)+'_linecuts.png')
+plt.show()
 
-# In[2]:
 # ======== G as a function of Tunneling Barrier (average G_N)==============        
 plt.figure(dpi = 600)
 plt.plot(G_N,G_z)
