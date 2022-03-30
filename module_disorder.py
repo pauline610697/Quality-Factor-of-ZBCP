@@ -14,9 +14,6 @@ ty = np.array([[0.0, -1j], [1j, 0.0]]); tz = np.array([[1.0, 0.0], [0.0, -1.0]])
 tzs0 = np.kron(tz,s0); t0s0 = np.kron(t0,s0); t0sx = np.kron(t0,sx);
 txs0 = np.kron(tx,s0); tzsy = np.kron(tz,sy); t0sz = np.kron(t0,sz);
 
-
-# In[327]:
-
 def NSjunction(args_dict):
     t = args_dict['t'];
     alpha = args_dict['alpha'];
